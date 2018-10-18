@@ -14,7 +14,7 @@ browserSync.create(config.staticServer.name)
 
 gulp.task('browser-sync', getTask('general/browser-sync'))
 
-gulp.task('build', ['html-build'], getTask('manifest/clean'))
+gulp.task('build', ['html-build', 'copy-cname'], getTask('manifest/clean'))
 
 gulp.task('assets-build', ['assets-clean', 'assets-copy'])
 gulp.task('assets-clean', getTask('assets/clean'))
@@ -36,6 +36,8 @@ gulp.task('js-clean', getTask('js/clean'))
 gulp.task('js-lint', getTask('js/lint'))
 
 gulp.task('manifest-clean', getTask('manifest/clean'))
+
+gulp.task('copy-cname', getTask('general/copy-cname'))
 
 gulp.task('watch', getTask('general/watch'))
 
