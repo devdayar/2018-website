@@ -1,7 +1,0 @@
-# files
-*.log
-.DS_Store
-
-# directories
-dist
-node_modules
