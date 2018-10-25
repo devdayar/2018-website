@@ -12,6 +12,16 @@ npm install
 npm run start-dev
 ```
 
+## Deployment
+
+```bash
+npm run build-prod
+git add -A
+git commit -m "My awesome commit"
+git push origin master
+npm run deploy
+```
+
 ## Licence
 
 MIT

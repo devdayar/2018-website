@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "build-prod": "gulp build --production",
+        "deploy": "gh-pages -d dist",
         "start": "gulp",
         "start-prod": "gulp --production",
         "task": "gulp --"
@@ -40,5 +41,8 @@
         "stylelint-order": "^0.4.4",
         "vinyl-buffer": "^1.0.0",
         "vinyl-source-stream": "^1.1.0"
+    },
+    "devDependencies": {
+        "gh-pages": "^2.0.1"
     }
 }
