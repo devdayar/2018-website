@@ -1,5 +1,72 @@
 @import './vendor/tachyons@4.7.4.css';
 
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+.btn.navy {
+    border-color: #242352;
+    box-shadow: inset 0 0 0 #fff, 0 0 0 #51ffe1;
+}
+
+.btn.white {
+    border-color: white;
+    box-shadow: inset 0 0 0 #6639e2, 0 0 0 #51ffe1;
+}
+
+.btn.navy:hover {
+    background-color: #51ffe1;
+    box-shadow: inset -7px 5px 0 #fff, -9px 7px 0 #51ffe1;
+    color: #242352;
+}
+
+.btn.white:hover {
+    background-color: #51ffe1;
+    box-shadow: inset -7px 5px 0 #6639e2, -9px 7px 0 #51ffe1;
+    color: #242352;
+}
+
+.diagonal {
+    background: #f4f4f4;
+    position: relative;
+}
+
+.diagonal::before,
+.diagonal::after,
+.diagonal-sponsor::before {
+    display: block;
+    height: 100px;
+}
+
+.diagonal::after {
+    background: linear-gradient(to right bottom, #f4f4f4 50%, #fff 50%);
+    content: '';
+}
+
+.diagonal::before {
+    background: linear-gradient(to right bottom, #fff 50%, #f4f4f4 50%);
+    content: '';
+}
+
+.diagonal-sponsor {
+    background: #6639e2;
+    position: relative;
+}
+
+.diagonal-sponsor::before {
+    background: linear-gradient(to left bottom, #fff 50%, #6639e2 50%);
+    content: '';
+}
+
 .fade-in-down > * {
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -33,7 +100,7 @@
 }
 
 .logo {
-    width: 440px;
+    width: 500px;
 }
 
 .miriam-libre {
@@ -104,6 +171,11 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.sponsors li {
+    height: 98px;
+    max-width: 260px;
 }
 
 .square {
