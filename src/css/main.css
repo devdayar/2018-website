@@ -173,7 +173,17 @@ body {
     }
 }
 
-.sponsors li {
+.sponsors .platinos li {
+    height: 136px;
+    max-width: 360px;
+}
+
+.sponsors .golds li {
+    height: 117px;
+    max-width: 310px;
+}
+
+.sponsors .silvers li {
     height: 98px;
     max-width: 260px;
 }
