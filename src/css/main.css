@@ -188,6 +188,11 @@ body {
     max-width: 260px;
 }
 
+.sponsors .startup li {
+    height: 79px;
+    max-width: 210px;
+}
+
 .square {
     animation-duration: 30s;
     animation-iteration-count: infinite;
