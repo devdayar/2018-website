@@ -1,5 +1,9 @@
 @import './vendor/tachyons@4.7.4.css';
 
+.bg-cyan {
+    background-color: #86fbe2;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -94,6 +98,11 @@ body {
     }
 }
 
+.hover-violet:hover,
+.violet {
+    color: #6639e2;
+}
+
 /* uncss:ignore */
 .js-fade-in-down-trigger > * {
     animation-name: fadeInDown;
@@ -105,72 +114,6 @@ body {
 
 .miriam-libre {
     font-family: 'Miriam Libre', sans-serif;
-}
-
-.mw-200 {
-    max-width: 200px;
-}
-
-.profile-toggle-children > span:last-child,
-.profile-toggle-children > span:last-child,
-.profile-toggle-children > span:last-child {
-    height: 0;
-    margin-left: -50px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.25s ease-out;
-}
-
-.profile:active .profile-toggle-children > span:first-child,
-.profile:focus .profile-toggle-children > span:first-child,
-.profile:hover .profile-toggle-children > span:first-child {
-    display: none;
-}
-
-.profile:active .profile-toggle-children > span:last-child,
-.profile:focus .profile-toggle-children > span:last-child,
-.profile:hover .profile-toggle-children > span:last-child {
-    height: auto;
-    margin-left: 0;
-    opacity: 1;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0);
-    }
-
-    20% {
-        transform: rotate(0);
-    }
-
-    25% {
-        transform: rotate(90deg);
-    }
-
-    45% {
-        transform: rotate(90deg);
-    }
-
-    50% {
-        transform: rotate(180deg);
-    }
-
-    70% {
-        transform: rotate(180deg);
-    }
-
-    75% {
-        transform: rotate(270deg);
-    }
-
-    95% {
-        transform: rotate(270deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .sponsors .platinos li {
@@ -191,19 +134,6 @@ body {
 .sponsors .startup li {
     height: 79px;
     max-width: 210px;
-}
-
-.square {
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-name: rotate;
-    animation-timing-function: ease-in-out;
-    bottom: -125px;
-    height: 250px;
-    left: -125px;
-    position: absolute;
-    width: 250px;
-    z-index: -1;
 }
 
 .slider {
@@ -259,29 +189,4 @@ body {
 
 [data-aload] {
     background-image: none !important;
-}
-
-@media screen and (min-width: 60em) {
-    .diamond-l {
-        bottom: -125px;
-        height: 525px;
-        position: absolute;
-        right: -200px;
-        width: 650px;
-        z-index: -1;
-    }
-}
-
-@media screen and (min-width: 70em) {
-    .flex-no-wrap-xl {
-        flex-wrap: nowrap;
-    }
-
-    .nl2-xl {
-        margin-left: -0.5rem;
-    }
-
-    .nr2-xl {
-        margin-right: -0.5rem;
-    }
 }
