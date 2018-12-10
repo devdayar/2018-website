@@ -1,7 +1,7 @@
 @import './vendor/tachyons@4.7.4.css';
 
 .bg-cyan {
-    background-color: #86fbe2;
+    background-color: #51ffe1;
 }
 
 body {
@@ -37,6 +37,10 @@ body {
     background-color: #51ffe1;
     box-shadow: inset -7px 5px 0 #6639e2, -9px 7px 0 #51ffe1;
     color: #242352;
+}
+
+.containerTab {
+    margin-top: -1px;
 }
 
 .diagonal {
