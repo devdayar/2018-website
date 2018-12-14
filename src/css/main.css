@@ -4,42 +4,16 @@
     background-color: #51ffe1;
 }
 
+.b--cyan {
+    border-color: #51ffe1;
+}
+
 body {
     overflow-x: hidden;
 }
 
-.btn {
-    background: transparent;
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px 30px;
-    text-decoration: none;
-    transition: all 0.25s ease-out;
-}
-
-.btn.navy {
-    border-color: #242352;
-    box-shadow: inset 0 0 0 #fff, 0 0 0 #51ffe1;
-}
-
-.btn.white {
-    border-color: white;
-    box-shadow: inset 0 0 0 #6639e2, 0 0 0 #51ffe1;
-}
-
-.btn.navy:hover {
-    background-color: #51ffe1;
-    box-shadow: inset -7px 5px 0 #fff, -9px 7px 0 #51ffe1;
-    color: #242352;
-}
-
-.btn.white:hover {
-    background-color: #51ffe1;
-    box-shadow: inset -7px 5px 0 #6639e2, -9px 7px 0 #51ffe1;
-    color: #242352;
-}
-
 .containerTab {
+    animation: fadeIn 0.5s;
     margin-top: -1px;
 }
 
@@ -102,6 +76,16 @@ body {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .hover-violet:hover,
 .violet {
     color: #6639e2;
@@ -116,7 +100,8 @@ body {
     width: 500px;
 }
 
-.miriam-libre {
+.miriam-libre,
+.tablinks {
     font-family: 'Miriam Libre', sans-serif;
 }
 
@@ -188,6 +173,90 @@ body {
 
     100% {
         left: -300%;
+    }
+}
+
+.tablinks {
+    background: transparent;
+    border-color: #242352;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: inset 0 0 0 #fff, 0 0 0 #51ffe1;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+.tablinks.active,
+.tablinks:hover {
+    background-color: #51ffe1;
+    box-shadow: inset -7px 5px 0 #fff, -9px 7px 0 #51ffe1;
+    color: #242352;
+}
+
+.tabcontent {
+    animation: fadeIn 1s;
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table h4 {
+    color: #6639e2;
+}
+
+td {
+    padding-left: 1rem;
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 30em) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        background-color: transparent;
+    }
+
+    thead tr {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+    }
+
+    td {
+        padding-left: 30%;
+        position: relative;
+    }
+
+    td:first-child {
+        background-color: #f1f1f1;
+    }
+
+    td::before {
+        content: attr(data-column);
+        left: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        white-space: nowrap;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    td::before {
+        font-size: 13px;
     }
 }
 
