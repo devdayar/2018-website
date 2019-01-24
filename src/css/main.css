@@ -1,5 +1,11 @@
 @import './vendor/tachyons@4.7.4.css';
 
+.speakers-slides {
+    font-family: Miriam Libre, sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
 .bg-cyan {
     background-color: #51ffe1;
 }
@@ -49,18 +55,18 @@ body {
     content: '';
 }
 
-.fade-in-down > * {
+.fade-in-down>* {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-.fade-in-down > *:nth-child(2) {
+.fade-in-down>*:nth-child(2) {
     animation-delay: 0.2s;
 }
 
-.fade-in-down > *:nth-child(3),
-.fade-in-down > *:nth-child(4) {
+.fade-in-down>*:nth-child(3),
+.fade-in-down>*:nth-child(4) {
     animation-delay: 0.4s;
 }
 
@@ -92,7 +98,7 @@ body {
 }
 
 /* uncss:ignore */
-.js-fade-in-down-trigger > * {
+.js-fade-in-down-trigger>* {
     animation-name: fadeInDown;
 }
 
@@ -136,7 +142,7 @@ body {
     width: 400%;
 }
 
-.slides > img {
+.slides>img {
     float: left;
     vertical-align: bottom;
     width: 25%;
@@ -216,6 +222,7 @@ thead {
 }
 
 @media screen and (max-width: 30em) {
+
     table,
     thead,
     tbody,
